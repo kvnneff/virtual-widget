@@ -19,9 +19,10 @@ function virtualWidget (obj) {
 
   return Widget
 
-  function Widget (state) {
+  function Widget (state, children) {
     if (!(this instanceof Widget)) return new Widget(state)
     this.type = 'Widget'
     this.state = state
+    this.children = children
   }
 }
